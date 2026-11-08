@@ -1,0 +1,18 @@
+name: Daily View Counter Keep-Alive
+
+on:
+  schedule:
+    # Runs automatically every day at 00:00 UTC (05:30 AM IST)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows you to manually trigger it anytime from GitHub Actions tab
+
+jobs:
+  daily-ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Increment Live View Counter
+        run: |
+          echo "Pinging live views counter badge from fresh runner IP..."
+          curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            "https://komarev.com/ghpvc/?username=OPSHARP-library-manager-ecosystem&label=Live+Views&color=blueviolet&style=for-the-badge&t=$(date +%s)" > /dev/null
+          echo "Daily view ping completed successfully."
