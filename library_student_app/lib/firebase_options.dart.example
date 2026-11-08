@@ -71,3 +71,4 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.studentapp',
   );
 }
+
