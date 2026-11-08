@@ -28,8 +28,7 @@
   <p align="center">
     <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.11.4+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
     <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" /></a>
-    <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-Serverless-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
-    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Cloud_Functions-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+    <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-BYOB_Ready-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-White--Label_BYOB-4CAF50?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License" /></a>
   </p>
 
@@ -76,21 +75,13 @@
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="32" /> Architecture Overview
 
-This repository is structured as a unified monorepo housing both client applications and the backend infrastructure:
+This repository is structured as a unified monorepo housing both client applications ready for white-labeling:
 
 ```
 📦 Library Manager Ecosystem
  ├── 📱 android/ & lib/               # Owner App (com.librarymanager.owner)
  ├── 🎓 library_student_app/          # Student Portal App (com.librarymanager.student)
- ├── ⚡ firebase/
- │    ├── 📜 firestore.rules          # Granular multi-tenant RBAC rules
- │    ├── 📜 storage.rules            # Secure bucket asset rules
- │    └── 💻 functions/src/           # Cloud Functions (TypeScript)
- │         ├── subscription_validation.ts  # Atomic Play Store receipt verification
- │         ├── attendance_alerts.ts        # Automated student check-in alerts
- │         ├── fee_reminders.ts            # Scheduled overdue notifications
- │         ├── student_library.ts          # Shift seats & membership workflows
- │         └── rate_limit.ts               # Brute-force & DDoS protection
+ ├── 📜 LICENSE                       # Commercial White-Label & BYOB License
  └── 📄 tos.md                        # Legal & Google Play Trader / DSA Compliance
 ```
 
@@ -103,14 +94,14 @@ graph TD
 
     subgraph Backend ["☁️ Firebase Cloud Infrastructure (BYOB)"]
         AUTH["🔐 Firebase Authentication<br/>Biometrics / OAuth / Passwords"]
-        FS[("🗄️ Cloud Firestore<br/>Subcollections + Atomic Transactions")]
-        CF["⚡ TypeScript Cloud Functions<br/>Subscription / Rate Limits / Seat Sync"]
+        FS[("🗄️ Cloud Firestore<br/>Subcollections + Realtime Sync")]
+        CF["⚡ Cloud Functions<br/>Subscription / Rate Limits / Seat Sync"]
         ST["📦 Cloud Storage<br/>Digital Fee Receipts / QR Badges"]
     end
 
     OA -->|Owner Admin CRUD| AUTH
     OA -->|Realtime Synced State| FS
-    OA -->|Cloud Reports & In-App Purchases| CF
+    OA -->|Cloud Reports & Subscriptions| CF
     OA -->|Store Invoices| ST
 
     SA -->|Self-Service Join / Scan| AUTH
@@ -178,7 +169,7 @@ rename setAppName --targets android,ios --value "Your Library Name"
 ### 2. Connect Your Own Firebase (Bring Your Own Backend)
 You **MUST** connect the apps to your own Firebase project (do NOT use author's backend):
 ```bash
-# Install FlutterFire CLI if you haven't:
+# Install FlutterFire CLI:
 dart pub global activate flutterfire_cli
 
 # Configure Owner App:
@@ -209,9 +200,9 @@ This repository contains **ZERO active backend credentials, API keys, or private
 | Security Vector | Implementation Detail |
 |---|---|
 | 🔑 **Zero-Secret Codebase** | All keystore passwords, signing files (`*.jks`, `key.properties`), and private Firebase configuration are 100% excluded via `.gitignore`. Sample templates provided. |
-| 🛡️ **Bring Your Own Backend** | Developers must connect their own Firebase project via `flutterfire configure`. |
+| 🛡️ **Private Backend Isolation** | The author's Cloud Functions, security rules, and databases are strictly private and not exposed in version control. |
 | ⚡ **Atomic In-App Purchases** | Google Play subscription validation runs inside Firestore transactions preventing duplicate token reuse attacks. |
-| 🔒 **Granular Firestore Rules** | Multi-tier security rules ensuring students can NEVER read other students' data or modify seat allocations without server validation. |
+| 🔒 **Granular Security Architecture** | Students can NEVER read other students' data or modify seat allocations without validation. |
 | 🧬 **Code Minification & Obfuscation** | Release builds enforce R8 shrinking and Dart-level AOT symbol obfuscation with split debug info. |
 
 ---
@@ -227,6 +218,12 @@ cd library-manager-ecosystem
 flutterfire configure
 
 # Run Owner App
+flutter pub get
+flutter run
+
+# Run Student App
+cd library_student_app
+flutterfire configure
 flutter pub get
 flutter run
 ```

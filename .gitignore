@@ -9,8 +9,6 @@
 !**/GoogleService-Info.plist.example
 **/firebase_options.dart
 !**/firebase_options.dart.example
-firebase/.firebaserc
-!firebase/.firebaserc.example
 *.jks
 *.keystore
 *.p12
@@ -21,6 +19,13 @@ firebase/.firebaserc
 **/*.env
 service-account*.json
 firebase-adminsdk*.json
+
+# ==============================================================================
+# Private Backend & Generator Dumps (Local Development Only)
+# ==============================================================================
+firebase/
+library manager and owner icons/
+library_student_app/lm student icons/
 
 # ==============================================================================
 # Flutter / Dart / Pub
@@ -59,16 +64,6 @@ app.*.map.json
 **/ios/Flutter/Flutter.podspec
 **/ios/Runner.xcodeproj/project.xcworkspace/
 **/ios/Runner.xcodeproj/xcuserdata/
-
-# ==============================================================================
-# Firebase / Node.js
-# ==============================================================================
-**/node_modules/
-firebase/functions/lib/
-firebase/.firebase/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # ==============================================================================
 # IDEs & Editor Metadata
