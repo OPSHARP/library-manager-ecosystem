@@ -9,12 +9,16 @@
     <b>A high-performance, white-label friendly library management ecosystem engineered with Flutter & Firebase.</b>
   </p>
 
-  <!-- Live Store Badges -->
+  <!-- Live Store & Total Downloads Badges -->
   <p align="center">
+    <a href="https://play.google.com/store/apps/dev?id=4787166422555400493" target="_blank">
+      <img src="https://img.shields.io/badge/Total_Downloads-100%2B_Active_Installs-blueviolet?style=for-the-badge&logo=google-play&logoColor=white" alt="Total Downloads" />
+    </a>
+    &nbsp;
     <a href="https://play.google.com/store/apps/details?id=com.librarymanager.owner" target="_blank">
       <img src="https://img.shields.io/badge/Google_Play-Owner_App_(Live)-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Owner App on Google Play" />
     </a>
-    &nbsp;&nbsp;
+    &nbsp;
     <a href="https://play.google.com/store/apps/details?id=com.librarymanager.student" target="_blank">
       <img src="https://img.shields.io/badge/Google_Play-Student_App_(Live)-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Student App on Google Play" />
     </a>
@@ -29,9 +33,37 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-White--Label_BYOB-4CAF50?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License" /></a>
   </p>
 
+  <!-- Animated Metrics Counter Card -->
+  <br/>
+  <table>
+    <tr>
+      <td align="center" width="200">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="40"/><br/>
+        <b>Total Downloads</b><br/>
+        <code>100+ Installs</code>
+      </td>
+      <td align="center" width="200">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" width="40"/><br/>
+        <b>Developer Rating</b><br/>
+        <code>5.0 ★ Play Store</code>
+      </td>
+      <td align="center" width="200">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="40"/><br/>
+        <b>Security Status</b><br/>
+        <code>Play Protect Verified</code>
+      </td>
+      <td align="center" width="200">
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="40"/><br/>
+        <b>Architecture</b><br/>
+        <code>Zero-Secret Isolated</code>
+      </td>
+    </tr>
+  </table>
+  <br/>
+
   <p align="center">
     <a href="#-architecture-overview">Architecture</a> •
-    <a href="#-dual-app-ecosystem">Apps & Links</a> •
+    <a href="#-dual-app-ecosystem--live-store-links">Apps & Links</a> •
     <a href="#-reskin--white-label-guide">Reskin Guide</a> •
     <a href="#-security--zero-secrets-policy">Security</a> •
     <a href="#-getting-started">Setup</a> •
@@ -59,21 +91,21 @@ This repository is structured as a unified monorepo housing both client applicat
  │         ├── fee_reminders.ts            # Scheduled overdue notifications
  │         ├── student_library.ts          # Shift seats & membership workflows
  │         └── rate_limit.ts               # Brute-force & DDoS protection
- └── 📄 tos.md & privacy.md           # Legal & Google Play Trader Compliance
+ └── 📄 tos.md                        # Legal & Google Play Trader / DSA Compliance
 ```
 
 ```mermaid
 graph TD
-    subgraph Clients
-        OA[📱 Library Manager & Owner App]
-        SA[🎓 LM Students Portal App]
+    subgraph Clients ["📱 Mobile Applications"]
+        OA["📱 Library Manager & Owner App"]
+        SA["🎓 LM Students Portal App"]
     end
 
-    subgraph Firebase Cloud Infrastructure (Your Own Backend)
-        AUTH[🔐 Firebase Authentication<br/>Biometrics / OAuth / Passwords]
-        FS[(🗄️ Cloud Firestore<br/>Subcollections + Atomic Transactions)]
-        CF[⚡ TypeScript Cloud Functions<br/>Subscription / Rate Limits / Seat Sync]
-        ST[📦 Cloud Storage<br/>Digital Fee Receipts / QR Badges]
+    subgraph Backend ["☁️ Firebase Cloud Infrastructure (BYOB)"]
+        AUTH["🔐 Firebase Authentication<br/>Biometrics / OAuth / Passwords"]
+        FS[("🗄️ Cloud Firestore<br/>Subcollections + Atomic Transactions")]
+        CF["⚡ TypeScript Cloud Functions<br/>Subscription / Rate Limits / Seat Sync"]
+        ST["📦 Cloud Storage<br/>Digital Fee Receipts / QR Badges"]
     end
 
     OA -->|Owner Admin CRUD| AUTH
@@ -97,10 +129,10 @@ graph TD
   </a>
 </p>
 
-* **Live URL:** [https://play.google.com/store/apps/details?id=com.librarymanager.owner](https://play.google.com/store/apps/details?id=com.librarymanager.owner)
-* **Package ID:** `com.librarymanager.owner`
+* **Live Play Store:** [https://play.google.com/store/apps/details?id=com.librarymanager.owner](https://play.google.com/store/apps/details?id=com.librarymanager.owner)
+* **Application ID:** `com.librarymanager.owner`
 * **Target Audience:** Library Owners, Administrators & Management Staff
-* **Key Features:**
+* **Core Capabilities:**
   - **Shift-Wise Seat Management**: Visual seat grid supporting multi-shift occupancy (Morning, Afternoon, Evening, Night, Full-Day).
   - **Automated Digital Fee Receipts**: Branded fee receipts, partial payments, discounts, and overdue tracking.
   - **Biometric Security Vault**: Local authentication gate with PIN/Biometric lock and automatic inactivity cooldown.
@@ -118,10 +150,10 @@ graph TD
   </a>
 </p>
 
-* **Live URL:** [https://play.google.com/store/apps/details?id=com.librarymanager.student](https://play.google.com/store/apps/details?id=com.librarymanager.student)
-* **Package ID:** `com.librarymanager.student`
+* **Live Play Store:** [https://play.google.com/store/apps/details?id=com.librarymanager.student](https://play.google.com/store/apps/details?id=com.librarymanager.student)
+* **Application ID:** `com.librarymanager.student`
 * **Target Audience:** Registered Students, Aspirants & Members
-* **Key Features:**
+* **Core Capabilities:**
   - **One-Tap QR / Code Joining**: Enter library token to bind student profile instantly.
   - **Real-Time Seat Availability**: Live visualization of vacant seats and shifts.
   - **Attendance History & Analytics**: Personal attendance logs with strict PII isolation.
