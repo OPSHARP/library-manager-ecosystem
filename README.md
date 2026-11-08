@@ -3,13 +3,24 @@
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Books.png" alt="Library System" width="90" />
 
   # 📚 Library Manager Ecosystem
-  ### Next-Gen Dual-App SaaS Template for Library Owners & Students
+  ### Next-Gen Dual-App SaaS Platform for Library Owners & Students
 
   <p align="center">
-    <b>A high-performance, white-label friendly library management template engineered with Flutter & Firebase.</b>
+    <b>A high-performance, white-label friendly library management ecosystem engineered with Flutter & Firebase.</b>
   </p>
 
-  <!-- Badges -->
+  <!-- Live Store Badges -->
+  <p align="center">
+    <a href="https://play.google.com/store/apps/details?id=com.librarymanager.owner" target="_blank">
+      <img src="https://img.shields.io/badge/Google_Play-Owner_App_(Live)-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Owner App on Google Play" />
+    </a>
+    &nbsp;&nbsp;
+    <a href="https://play.google.com/store/apps/details?id=com.librarymanager.student" target="_blank">
+      <img src="https://img.shields.io/badge/Google_Play-Student_App_(Live)-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Student App on Google Play" />
+    </a>
+  </p>
+
+  <!-- Tech Badges -->
   <p align="center">
     <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.11.4+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
     <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" /></a>
@@ -20,8 +31,8 @@
 
   <p align="center">
     <a href="#-architecture-overview">Architecture</a> •
+    <a href="#-dual-app-ecosystem">Apps & Links</a> •
     <a href="#-reskin--white-label-guide">Reskin Guide</a> •
-    <a href="#-dual-app-ecosystem">Apps</a> •
     <a href="#-security--zero-secrets-policy">Security</a> •
     <a href="#-getting-started">Setup</a> •
     <a href="#-license--usage-terms">License</a>
@@ -77,6 +88,48 @@ graph TD
 
 ---
 
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="32" /> Dual-App Ecosystem & Live Store Links
+
+### 1. 🏢 Library Manager and Owner (Admin App)
+<p>
+  <a href="https://play.google.com/store/apps/details?id=com.librarymanager.owner" target="_blank">
+    <img src="https://img.shields.io/badge/Google_Play-Download_Owner_App-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Owner App Play Store" />
+  </a>
+</p>
+
+* **Live URL:** [https://play.google.com/store/apps/details?id=com.librarymanager.owner](https://play.google.com/store/apps/details?id=com.librarymanager.owner)
+* **Package ID:** `com.librarymanager.owner`
+* **Target Audience:** Library Owners, Administrators & Management Staff
+* **Key Features:**
+  - **Shift-Wise Seat Management**: Visual seat grid supporting multi-shift occupancy (Morning, Afternoon, Evening, Night, Full-Day).
+  - **Automated Digital Fee Receipts**: Branded fee receipts, partial payments, discounts, and overdue tracking.
+  - **Biometric Security Vault**: Local authentication gate with PIN/Biometric lock and automatic inactivity cooldown.
+  - **Offline Attendance Sync**: Zero-downtime offline attendance queue with poison-pill retry guards.
+  - **Operational Expense Tracker**: Category-wise expense logging with monthly financial analytics.
+  - **Dynamic Notice Board**: Push notices and operational guidelines straight to all registered students.
+  - **Auto Cloud Backup**: Multi-chunk Firestore document backups to bypass the 1MB document limit.
+
+---
+
+### 2. 🎓 LM Students Portal (Student Self-Service)
+<p>
+  <a href="https://play.google.com/store/apps/details?id=com.librarymanager.student" target="_blank">
+    <img src="https://img.shields.io/badge/Google_Play-Download_Student_App-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Student App Play Store" />
+  </a>
+</p>
+
+* **Live URL:** [https://play.google.com/store/apps/details?id=com.librarymanager.student](https://play.google.com/store/apps/details?id=com.librarymanager.student)
+* **Package ID:** `com.librarymanager.student`
+* **Target Audience:** Registered Students, Aspirants & Members
+* **Key Features:**
+  - **One-Tap QR / Code Joining**: Enter library token to bind student profile instantly.
+  - **Real-Time Seat Availability**: Live visualization of vacant seats and shifts.
+  - **Attendance History & Analytics**: Personal attendance logs with strict PII isolation.
+  - **Instant Digital Notices**: Real-time notifications for library timings, fees, holidays, and rules.
+  - **Leave Request Management**: Submit and track leave requests with automated seat retention.
+
+---
+
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="32" /> Reskin & White-Label Guide
 
 You are free to download, re-brand, and deploy this template for your own library business! Follow these 4 steps to safely make it your own:
@@ -114,26 +167,6 @@ Copy `key.properties.example` to `key.properties` and add your own keystore file
 ```bash
 cp android/key.properties.example android/key.properties
 ```
-
----
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="32" /> Dual-App Ecosystem
-
-### 1. 🏢 Library Manager and Owner (Admin App)
-- **Shift-Wise Seat Management**: Visual seat grid supporting multi-shift occupancy (Morning, Afternoon, Evening, Night, Full-Day).
-- **Automated Digital Fee Receipts**: Generates branded fee receipts, handles partial payments, discounts, and overdue tracking.
-- **Biometric Security Vault**: Local authentication gate with cryptographic PIN/Biometric lock and automatic inactivity cooldown.
-- **Offline Attendance Sync**: Zero-downtime offline attendance queue with poison-pill retry guards.
-- **Operational Expense Tracker**: Category-wise expense logging with monthly financial analytics.
-- **Dynamic Notice Board**: Push notices and operational guidelines straight to all registered students.
-- **Auto Cloud Backup**: Multi-chunk Firestore document backups to bypass the 1MB document limit.
-
-### 2. 🎓 LM Students Portal (Student Self-Service)
-- **One-Tap QR / Code Joining**: Enter library token to bind student profile instantly.
-- **Real-Time Seat Availability**: Live visualization of vacant seats and shifts.
-- **Attendance History & Analytics**: Personal attendance logs with strict PII isolation.
-- **Instant Digital Notices**: Real-time notifications for library timings, fees, holidays, and rules.
-- **Leave Request Management**: Submit and track leave requests with automated seat retention.
 
 ---
 

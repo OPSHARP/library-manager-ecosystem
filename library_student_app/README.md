@@ -6,6 +6,12 @@
   ### Self-Service Mobile Application for Library Students
 
   <p align="center">
+    <a href="https://play.google.com/store/apps/details?id=com.librarymanager.student" target="_blank">
+      <img src="https://img.shields.io/badge/Google_Play-Live_on_Play_Store-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Live on Play Store" />
+    </a>
+  </p>
+
+  <p align="center">
     <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.11.4+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
     <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-Auth_%26_Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
     <a href="#"><img src="https://img.shields.io/badge/PII-Isolated_%26_Encrypted-brightgreen?style=for-the-badge&logo=shield&logoColor=white" alt="Privacy" /></a>
@@ -18,6 +24,9 @@
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="28" /> Overview
 
 The **LM Students Portal** provides students with direct, real-time access to their library membership, shift seats, digital notices, and personal attendance history.
+
+* 📱 **Google Play Store Link:** [https://play.google.com/store/apps/details?id=com.librarymanager.student](https://play.google.com/store/apps/details?id=com.librarymanager.student)
+* 🏷️ **Application ID:** `com.librarymanager.student`
 
 ### Core Capabilities
 - **Quick Join**: Join any registered library via library code or QR scan.
@@ -37,7 +46,8 @@ The **LM Students Portal** provides students with direct, real-time access to th
 # 1. Copy config template
 cp android/key.properties.example android/key.properties
 
-# 2. Place google-services.json from Firebase Console into android/app/
+# 2. Configure your own Firebase
+flutterfire configure
 
 # 3. Install & run
 flutter pub get
@@ -48,4 +58,3 @@ flutter run
 <div align="center">
   <sub>Part of the <b>Library Manager Ecosystem</b> • Maintained by <b>SHARP OP</b></sub>
 </div>
-
