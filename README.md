@@ -9,12 +9,23 @@
     <b>A high-performance, white-label friendly library management ecosystem engineered with Flutter & Firebase.</b>
   </p>
 
-  <!-- Live Store & Total Downloads Badges -->
+  <!-- Real-Time Auto-Updating Dynamic Badges -->
   <p align="center">
-    <a href="https://play.google.com/store/apps/dev?id=4787166422555400493" target="_blank">
-      <img src="https://img.shields.io/badge/Total_Downloads-100%2B_Active_Installs-blueviolet?style=for-the-badge&logo=google-play&logoColor=white" alt="Total Downloads" />
+    <a href="https://github.com/OPSHARP/library-manager-ecosystem">
+      <img src="https://komarev.com/ghpvc/?username=OPSHARP-library-manager-ecosystem&label=Live+Views&color=blueviolet&style=for-the-badge" alt="Live Repository Views" />
     </a>
     &nbsp;
+    <a href="https://github.com/OPSHARP/library-manager-ecosystem/stargazers">
+      <img src="https://img.shields.io/github/stars/OPSHARP/library-manager-ecosystem?style=for-the-badge&logo=github&color=FFD700" alt="GitHub Stars" />
+    </a>
+    &nbsp;
+    <a href="https://github.com/OPSHARP/library-manager-ecosystem/network/members">
+      <img src="https://img.shields.io/github/forks/OPSHARP/library-manager-ecosystem?style=for-the-badge&logo=github&color=007ACC" alt="GitHub Forks" />
+    </a>
+  </p>
+
+  <!-- Live Google Play Badges -->
+  <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.librarymanager.owner" target="_blank">
       <img src="https://img.shields.io/badge/Google_Play-Owner_App_(Live)-01875F?style=for-the-badge&logo=google-play&logoColor=white" alt="Owner App on Google Play" />
     </a>
@@ -31,34 +42,6 @@
     <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-BYOB_Ready-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-White--Label_BYOB-4CAF50?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License" /></a>
   </p>
-
-  <!-- Animated Metrics Counter Card -->
-  <br/>
-  <table>
-    <tr>
-      <td align="center" width="200">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="40"/><br/>
-        <b>Total Downloads</b><br/>
-        <code>100+ Installs</code>
-      </td>
-      <td align="center" width="200">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" width="40"/><br/>
-        <b>Developer Rating</b><br/>
-        <code>5.0 ★ Play Store</code>
-      </td>
-      <td align="center" width="200">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="40"/><br/>
-        <b>Security Status</b><br/>
-        <code>Play Protect Verified</code>
-      </td>
-      <td align="center" width="200">
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="40"/><br/>
-        <b>Architecture</b><br/>
-        <code>Zero-Secret Isolated</code>
-      </td>
-    </tr>
-  </table>
-  <br/>
 
   <p align="center">
     <a href="#-architecture-overview">Architecture</a> •
