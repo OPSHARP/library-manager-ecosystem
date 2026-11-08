@@ -1,13 +1,34 @@
-SHARP OP Commercial Template & White-Label License (BYOB - Bring Your Own Backend)
+SHARP OP Non-Commercial & Anti-Resale Source License (BYOB)
 Copyright (c) 2026 SHARP OP (UDYAM-UP-18-0090815). All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software, codebase, and associated documentation files (the "Software"),
-to use, study, copy, modify, merge, publish, and reskin the Software for personal
-or commercial application deployment, subject to the following STRICT conditions:
+to use, study, copy, and modify the Software STRICTLY FOR PERSONAL, EDUCATIONAL,
+OR INTERNAL NON-COMMERCIAL PURPOSES, subject to the following MANDATORY and
+LEGALLY BINDING RESTRICTIONS:
 
 ================================================================================
-1. BRING YOUR OWN BACKEND (BYOB) - CLOUD ISOLATION REQUIREMENT
+1. STRICT ANTI-RESALE & COMMERCIAL EXPLOITATION PROHIBITION
+================================================================================
+YOU ARE STRICTLY FORBIDDEN FROM SELLING, RESELLING, LICENSING, SUBLICENSING,
+RENTING, LEASING, OR COMMERCIALLY EXPLOITING THIS SOFTWARE OR ANY DERIVATIVE WORK.
+
+Under NO circumstances may any person, business, freelancer, or entity:
+(a) Sell the source code, compiled binaries (APK, AAB), or modified versions on
+    digital marketplaces, code-sharing stores, freelancing platforms (e.g., CodeCanyon,
+    Envato, Gumroad, Fiverr, Upwork, Freelancer, GitHub Marketplace, Telegram channels).
+(b) Package, reskin, or re-brand this Software and sell it to third-party clients
+    or library owners for monetary compensation or financial gain.
+(c) Charge users, customers, or clients fees, subscriptions, or payments to access
+    or obtain this software codebase.
+
+ANY ATTEMPT TO SELL OR MONETIZE THIS CODEBASE CONSTITUTES WILLFUL COPYRIGHT
+INFRINGEMENT UNDER THE INDIAN COPYRIGHT ACT, 1957 AND THE DIGITAL MILLENNIUM
+COPYRIGHT ACT (DMCA), AND WILL BE SUBJECT TO IMMEDIATE LEGAL ACTION, PLATFORM
+TAKEDOWNS, AND STATUTORY DAMAGES.
+
+================================================================================
+2. BRING YOUR OWN BACKEND (BYOB) - ZERO ACCESS TO AUTHOR'S INFRASTRUCTURE
 ================================================================================
 The author's private cloud backend, Firebase project ('mynotebookpro-edec0'),
 Firestore databases, Google Cloud resources, and Cloud Functions endpoints are
@@ -19,23 +40,23 @@ Under NO circumstances are you permitted to:
 (b) Use, trigger, or consume quotas of the author's Cloud Functions or Google Cloud APIs.
 (c) Attempt to reverse-engineer or query author's private user or student records.
 
-YOU MUST CONFIGURE AND DEPLOY YOUR OWN SEPARATE BACKEND (e.g. by running
+YOU MUST CONFIGURE AND DEPLOY YOUR OWN SEPARATE BACKEND (e.g., by running
 `flutterfire configure` and deploying your own Firebase project).
 
 ================================================================================
-2. TRADEMARK, BRANDING & RE-SKINNING REQUIREMENT
+3. TRADEMARK & BRANDING PROTECTION
 ================================================================================
-This license grants code-level template usage rights, but expressly EXCLUDES
+This license grants non-commercial source usage rights, but expressly EXCLUDES
 trademark and brand identity rights. You MUST:
 (a) Change the Application Name, Package Name (Application ID), and Bundle ID.
 (b) Replace all official logos, branding graphics, and splash icons with your own.
-(c) Remove references to 'SHARP OP', Udyam registration numbers, and author's
-    personal/business contact information from your customer-facing applications.
+(c) Remove all references to 'SHARP OP', Udyam registration numbers, and author's
+    personal/business contact information from any non-commercial deployment.
 (d) Not advertise, market, or represent your app as an official product of or
     affiliated with SHARP OP.
 
 ================================================================================
-3. DISCLAIMER & LIMITATION OF LIABILITY
+4. DISCLAIMER & LIMITATION OF LIABILITY
 ================================================================================
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
@@ -44,4 +65,3 @@ COPYRIGHT HOLDERS (SHARP OP) BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-

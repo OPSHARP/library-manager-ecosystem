@@ -6,7 +6,7 @@
   ### Next-Gen Dual-App SaaS Platform for Library Owners & Students
 
   <p align="center">
-    <b>A high-performance, white-label friendly library management ecosystem engineered with Flutter & Firebase.</b>
+    <b>A high-performance library management ecosystem engineered with Flutter & Firebase.</b>
   </p>
 
   <!-- Real-Time Auto-Updating Dynamic Badges -->
@@ -35,18 +35,18 @@
     </a>
   </p>
 
-  <!-- Tech Badges -->
+  <!-- Tech & License Badges -->
   <p align="center">
     <a href="https://flutter.dev/"><img src="https://img.shields.io/badge/Flutter-3.11.4+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
     <a href="https://dart.dev/"><img src="https://img.shields.io/badge/Dart-3.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" /></a>
     <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-BYOB_Ready-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-White--Label_BYOB-4CAF50?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-Non--Commercial_No--Resale-D32F2F?style=for-the-badge&logo=shield&logoColor=white" alt="No Resale License" /></a>
   </p>
 
   <p align="center">
     <a href="#-architecture-overview">Architecture</a> •
+    <a href="#-anti-resale--non-commercial-protection">Anti-Resale Policy</a> •
     <a href="#-dual-app-ecosystem--live-store-links">Apps & Links</a> •
-    <a href="#-reskin--white-label-guide">Reskin Guide</a> •
     <a href="#-security--zero-secrets-policy">Security</a> •
     <a href="#-getting-started">Setup</a> •
     <a href="#-license--usage-terms">License</a>
@@ -56,15 +56,28 @@
 
 ---
 
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Prohibited.png" width="30" /> Anti-Resale & Non-Commercial Protection
+
+> [!CAUTION]
+> **STRICT PROHIBITION ON SELLING & MONETIZATION**
+> 
+> This repository and all associated source code are licensed strictly for **personal, educational, and internal non-commercial use**.
+> 
+> - ❌ **NO COMMERCIAL SALE**: You are strictly forbidden from selling the source code, APKs, AABs, or reskinned versions on **CodeCanyon, Envato, Gumroad, Fiverr, Upwork, Telegram, or any freelancing/marketplace platform**.
+> - ❌ **NO CLIENT RESALE**: You may NOT package or reskin this software to sell it to third-party clients or library owners for money.
+> - ⚖️ **LEGAL ENFORCEMENT**: Any unauthorized sale or distribution for fee constitutes intentional copyright infringement under the **Indian Copyright Act, 1957** and **DMCA**, and will be immediately subjected to takedown strikes, account bans, and legal claims.
+
+---
+
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="32" /> Architecture Overview
 
-This repository is structured as a unified monorepo housing both client applications ready for white-labeling:
+This repository is structured as a unified monorepo housing both client applications:
 
 ```
 📦 Library Manager Ecosystem
  ├── 📱 android/ & lib/               # Owner App (com.librarymanager.owner)
  ├── 🎓 library_student_app/          # Student Portal App (com.librarymanager.student)
- ├── 📜 LICENSE                       # Commercial White-Label & BYOB License
+ ├── 📜 LICENSE                       # Non-Commercial & Anti-Resale License
  └── 📄 tos.md                        # Legal & Google Play Trader / DSA Compliance
 ```
 
@@ -136,21 +149,12 @@ graph TD
 
 ---
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="32" /> Reskin & White-Label Guide
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="32" /> Personal & Internal Setup Guide
 
-You are free to download, re-brand, and deploy this template for your own library business! Follow these 4 steps to safely make it your own:
+For personal, non-commercial use, follow these steps to set up the apps:
 
-### 1. Change Package Name & App Identity
-Update package IDs in `android/app/build.gradle.kts` and `AndroidManifest.xml` (e.g. from `com.librarymanager.owner` to `com.yourbrand.library`):
-```bash
-# Recommended tool for quick rename:
-flutter pub global activate rename
-rename setBundleId --targets android,ios --value "com.yourbrand.library"
-rename setAppName --targets android,ios --value "Your Library Name"
-```
-
-### 2. Connect Your Own Firebase (Bring Your Own Backend)
-You **MUST** connect the apps to your own Firebase project (do NOT use author's backend):
+### 1. Connect Your Own Firebase (Bring Your Own Backend)
+You **MUST** connect the apps to your own Firebase project (the author's backend is completely private):
 ```bash
 # Install FlutterFire CLI:
 dart pub global activate flutterfire_cli
@@ -164,11 +168,7 @@ flutterfire configure
 ```
 This automatically generates your own `lib/firebase_options.dart` and downloads `google-services.json`.
 
-### 3. Replace Icons & Branding
-- Replace icons in `android/app/src/main/res/` and `assets/` with your own library logo.
-- Customize color palette in `lib/core/theme/` to match your brand.
-
-### 4. Setup Release Signing Keystore
+### 2. Setup Release Signing Keystore
 Copy `key.properties.example` to `key.properties` and add your own keystore file:
 ```bash
 cp android/key.properties.example android/key.properties
@@ -193,7 +193,7 @@ This repository contains **ZERO active backend credentials, API keys, or private
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="32" /> Quick Start
 
 ```bash
-# Clone the template
+# Clone the repository
 git clone https://github.com/OPSHARP/library-manager-ecosystem.git
 cd library-manager-ecosystem
 
@@ -228,10 +228,11 @@ cd library_student_app
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Scroll.png" width="32" /> License & Usage Terms
 
-This project is licensed under the **SHARP OP Commercial Template & White-Label License (BYOB)**.
+This project is licensed under the **SHARP OP Non-Commercial & Anti-Resale Source License (BYOB)**.
 
-- **You ARE permitted to**: Clone, fork, modify, reskin, and distribute your own branded mobile applications commercially.
-- **You MUST NOT**: Use the author's private Firebase backend, consume author's cloud quotas, or use the trademarked name/branding of "SHARP OP".
+- **STRICT ANTI-RESALE**: Selling this code, derivative apps, or reskinned versions is strictly illegal.
+- **FREE PERSONAL USE**: You may study, learn, and use this code strictly for personal or internal non-commercial purposes.
+- **ZERO BACKEND ACCESS**: You must configure your own separate Firebase project.
 
 See the full [LICENSE](LICENSE) file for complete legal terms.
 
