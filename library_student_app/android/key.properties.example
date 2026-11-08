@@ -1,0 +1,8 @@
+# Example Keystore configuration for release signing (LM Students App)
+# Copy this file to 'key.properties' and fill in your actual credentials.
+# NEVER commit your real key.properties or keystore files to version control!
+
+storePassword=YOUR_KEYSTORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+storeFile=C:\\path\\to\\your-keystore.jks

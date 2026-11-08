@@ -1,0 +1,63 @@
+# ==============================================================================
+# Security & Credentials
+# ==============================================================================
+**/key.properties
+!**/key.properties.example
+**/google-services.json
+!**/google-services.json.example
+**/GoogleService-Info.plist
+!**/GoogleService-Info.plist.example
+*.jks
+*.keystore
+local.properties
+**/local.properties
+.env
+*.env
+**/*.env
+
+# ==============================================================================
+# Flutter / Dart
+# ==============================================================================
+.dart_tool/
+**/.dart_tool/
+.packages
+build/
+**/build/
+*.iml
+.metadata
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ==============================================================================
+# Android
+# ==============================================================================
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+
+# ==============================================================================
+# iOS
+# ==============================================================================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcodeproj/xcuserdata/
+
+# ==============================================================================
+# IDE & Editors
+# ==============================================================================
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.swp
+*.swo
+
+# ==============================================================================
+# OS & Caches
+# ==============================================================================
+.DS_Store
+Thumbs.db

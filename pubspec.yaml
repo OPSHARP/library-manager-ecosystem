@@ -1,0 +1,102 @@
+name: library_manager_and_owner
+description: "Library Manager and Owner - Smart Library Management Platform"
+publish_to: 'none'
+version: 4.0.0+5
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # Routing
+  go_router: ^14.8.1
+
+  # UI
+  google_fonts: ^6.2.1
+  fl_chart: ^0.70.2
+
+  # QR
+  mobile_scanner: ^5.1.1
+  qr_flutter: ^4.1.0
+
+  # Utils
+  intl: ^0.20.2
+  uuid: ^4.4.0
+  image_picker: ^1.1.2
+  share_plus: ^11.0.0
+  url_launcher: ^6.3.0
+
+  # Export (PDF, Excel, CSV)
+  pdf: ^3.11.0
+  printing: ^5.12.0
+  csv: ^6.0.0
+  excel: ^4.0.6
+
+  # Import
+  file_picker: ^8.0.0
+
+  # Biometric
+  local_auth: ^2.3.0
+
+  # Offline Storage
+  shared_preferences: ^2.2.3
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+  # Security
+  crypto: ^3.0.6
+
+  # Firebase
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.6
+  cloud_functions: ^5.3.2
+  firebase_storage: ^12.4.4
+  flutter_secure_storage: ^9.2.2
+
+  # Connectivity
+  connectivity_plus: ^6.0.3
+
+  # Permissions
+  permission_handler: ^11.3.1
+  geolocator: ^14.0.2
+  http: ^1.6.0
+  google_sign_in: ^7.2.0
+  path_provider: ^2.1.5
+  in_app_purchase: ^3.2.0
+  in_app_purchase_android: ^0.5.0
+
+  # Ads (AdMob) — free plan shows a non-intrusive banner; Pro hides it
+  google_mobile_ads: ^5.2.0
+  app_links: ^7.0.0
+  firebase_remote_config: ^5.5.0
+  firebase_app_check: ^0.3.2+10
+
+  # In-App Updates (Android Play Core — flexible background downloads)
+  in_app_update: ^5.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/

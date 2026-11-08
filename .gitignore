@@ -1,0 +1,98 @@
+# ==============================================================================
+# Security & Credentials (CRITICAL - DO NOT COMMIT SECRETS)
+# ==============================================================================
+**/key.properties
+!**/key.properties.example
+**/google-services.json
+!**/google-services.json.example
+**/GoogleService-Info.plist
+!**/GoogleService-Info.plist.example
+*.jks
+*.keystore
+*.p12
+*.pem
+**/local.properties
+.env
+*.env
+**/*.env
+service-account*.json
+firebase-adminsdk*.json
+
+# ==============================================================================
+# Flutter / Dart / Pub
+# ==============================================================================
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+**/.dart_tool/
+.packages
+**/.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+**/build/
+/coverage/
+app.*.symbols
+app.*.map.json
+
+# ==============================================================================
+# Android
+# ==============================================================================
+**/.gradle/
+**/build/
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# ==============================================================================
+# iOS / macOS
+# ==============================================================================
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Runner.xcodeproj/project.xcworkspace/
+**/ios/Runner.xcodeproj/xcuserdata/
+
+# ==============================================================================
+# Firebase / Node.js
+# ==============================================================================
+**/node_modules/
+firebase/functions/lib/
+firebase/.firebase/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# IDEs & Editor Metadata
+# ==============================================================================
+*.iml
+*.ipr
+*.iws
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+.kilo/
+.agents/
+graphify-out/
+
+# ==============================================================================
+# OS & System Temporaries
+# ==============================================================================
+.DS_Store
+Thumbs.db
+*.class
+*.log
+*.pyc
+*.swp
+*.swo
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
