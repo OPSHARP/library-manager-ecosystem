@@ -7,6 +7,8 @@
 !**/google-services.json.example
 **/GoogleService-Info.plist
 !**/GoogleService-Info.plist.example
+**/firebase_options.dart
+!**/firebase_options.dart.example
 *.jks
 *.keystore
 local.properties

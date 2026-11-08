@@ -1,5 +1,5 @@
 # ==============================================================================
-# Security & Credentials (CRITICAL - DO NOT COMMIT SECRETS)
+# Security & Credentials (CRITICAL - ZERO SECRETS POLICY)
 # ==============================================================================
 **/key.properties
 !**/key.properties.example
@@ -7,6 +7,10 @@
 !**/google-services.json.example
 **/GoogleService-Info.plist
 !**/GoogleService-Info.plist.example
+**/firebase_options.dart
+!**/firebase_options.dart.example
+firebase/.firebaserc
+!firebase/.firebaserc.example
 *.jks
 *.keystore
 *.p12
