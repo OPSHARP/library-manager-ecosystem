@@ -24,6 +24,7 @@ firebase-adminsdk*.json
 # Private Backend & Generator Dumps (Local Development Only)
 # ==============================================================================
 firebase/
+android/Assets/
 library manager and owner icons/
 library_student_app/lm student icons/
 
