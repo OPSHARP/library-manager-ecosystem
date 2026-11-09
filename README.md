@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Books.png" alt="Library System" width="90" />
+  <img src="android/app/src/main/res/drawable/ic_launcher_web.png" width="110" height="110" alt="Library Manager & Owner Logo" style="border-radius: 24px;" />
 
   # 📚 Library Manager Ecosystem
   ### Next-Gen Dual-App SaaS Platform for Library Owners & Students
@@ -21,6 +21,13 @@
     &nbsp;
     <a href="https://github.com/OPSHARP/library-manager-ecosystem/network/members">
       <img src="https://img.shields.io/github/forks/OPSHARP/library-manager-ecosystem?style=for-the-badge&logo=github&color=007ACC" alt="GitHub Forks" />
+    </a>
+  </p>
+
+    <!-- Live Google Play Buttons -->
+  <p align="center">
+    <a href="https://play.google.com/store/apps/details?id=com.librarymanager.owner" target="_blank">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play (Owner App)" height="75" />
     </a>
   </p>
 
